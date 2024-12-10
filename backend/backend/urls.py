@@ -22,6 +22,6 @@ from todoapp.views import Heartbeat
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('todoapp.urls')),
-    path('todos/', TemplateView.as_view(template_name="todo_form.html"), name='todo_form'),
+    path('', TemplateView.as_view(template_name="todo_form.html"), name='todo_form'),
     path('', Heartbeat, name='heartbeat')
 ]
