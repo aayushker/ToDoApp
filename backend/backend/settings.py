@@ -60,7 +60,7 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR/'templates/todo'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -68,10 +68,11 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-            ],
+            ], 
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
